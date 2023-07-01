@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"major mono display","consolas";
+}
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(73, 99, 93) 0%, rgb(76, 95, 85) 35%, rgb(41, 53, 41) 100%);
+    background-size:cover;
+    background-position:center;
+
+}
+
+.header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px ;
+    background:rgb(17, 24, 22);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 100;
+}
+.Company
+{
+    font-size: 32px;
+    color:white;
+    text-decoration: none;
+    font-weight: 700px;
+}
+.Navbar a
+{
+    position: relative;
+   font-size:18px;
+   color:white;
+   text-decoration: none;
+   margin-left: 40px; 
+   font-weight: 500;   
+
+}
+.Navbar a::before
+{
+   content:'';
+   position:absolute;
+   top:100%;
+   left:0;
+   width:0;
+   height:2px;
+   background: white;
+   transition: .3s;
+   
+}
+
+.Navbar a:hover::before
+{
+    width:100%;
+
+}
+div
+{
+    align-items: center;
+    margin: 200px;
+    border-style:inset;
+    border-width: 5PX;
+    margin-right: 30PX;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-size-adjust: 20%;
+    border-radius: 50px;
+    border-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:40px;
+    background:linear-gradient(90deg,#4AB19D,#3445EC);
+}
